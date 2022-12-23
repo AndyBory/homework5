@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	text-align: center;
+}
+
+.main {
+	background-color: rgb(172, 180, 206);
+	padding: 10px 15px;
+	max-width: 480px;
+	margin: 10% auto;
+}
+
+.heading-title {
+	font-size: 2rem;
+	padding-bottom: 2px;
+	overflow: hidden;
+}
+
+.heading-span {
+	position: relative;
+	padding: 0 10px;
+}
+
+.heading-span::before,
+.heading-span::after {
+	content: "";
+	position: absolute;
+	border: 1px solid grey;
+	top: 50%;
+}
+
+.heading-span::before {
+	right: 100%;
+	left: -1000%;
+}
+
+.heading-span::after {
+	right: -1000%;
+	left: 100%;
+}
+
+.heading-text {
+  text-align: center;
+  padding: 9px 0 25px 0;
+	opacity: 0.4;
+}
+
+.name {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.input {
+	padding: 16px;
+	border-radius: 5px;
+	border-color: rgb(217, 212, 230);
+}
+
+.input-name {
+	width: 45%;
+}
+
+.mailpass {
+	display: flex;
+	flex-direction: column;
+}
+
+.accept {
+	text-align: left;
+}
+
+.name,
+.input-mailpass,
+.accept,
+.button {
+	margin-bottom: 20px;
+}
+
+.link {
+	color: green;
+}
+
+.button {
+	background-color: green;
+	color: white;
+	font-weight: bold;
+	padding: 15px 20px;
+	border-radius: 5px;
+	border: none;
+}
+
+.button:hover,
+.button:focus {
+	background-color: white;
+	color: green;
+	border: solid green;
+}
+
